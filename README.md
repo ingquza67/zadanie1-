@@ -5,13 +5,10 @@ $conn = mysqli_connect("localhost","root","","hotel");  <- *tutaj jest połącze
 ?>
 <style>
     th, td {
-        border: 1px solid black;
+        border: 1px solid black;                                   <- *w tym miejscu jest dodany styl żeby tabelka była czytelniejsza*
         
     }
-</style>
-       ^
-       |
-*w tym miejscu jest dodany styl żeby tabelka była czytelniejsza*
+</style>                                            
 
 
 <!DOCTYPE html>
@@ -25,7 +22,7 @@ $conn = mysqli_connect("localhost","root","","hotel");  <- *tutaj jest połącze
 <table>
     <tr>
         <th>Numer Pokoju</th>
-        <th>ilość Łóżek</th>   <- tutaj się zaczyna się tabela
+        <th>ilość Łóżek</th>                                   <- tutaj się zaczyna się tabela
         <th>Zakaz Zwierząt</th>
 
 
@@ -34,7 +31,7 @@ $conn = mysqli_connect("localhost","root","","hotel");  <- *tutaj jest połącze
 
 <?php
 
-$query = "SELECT numer_pokoju,ilosc_miejsc,zakaz_zwierzat FROM `pokoje` WHERE ilosc_miejsc > 2;"; <- zapytanie
+$query = "SELECT numer_pokoju,ilosc_miejsc,zakaz_zwierzat FROM `pokoje` WHERE ilosc_miejsc > 2;";                    <- zapytanie
 
 $result = mysqli_query($conn, $query);
  
@@ -42,7 +39,7 @@ if($result){
     while($wiersz = mysqli_fetch_assoc($result)){
         echo "<tr>";
         echo "<td>" , $wiersz ['numer_pokoju'] ,"</td>";
-        echo "<td>" , $wiersz ['ilosc_miejsc'] ,"</td>";            <- pętla tworząca nowe rzędy tabelki
+        echo "<td>" , $wiersz ['ilosc_miejsc'] ,"</td>";          <- pętla tworząca nowe rzędy tabelki
         echo "<td>" , $wiersz ['zakaz_zwierzat'] , "</td>";
         echo "</tr>";
     }
@@ -51,11 +48,10 @@ if($result){
 ?>
 
 
-
-</table> <- zamknięcie tabeli
+</table> <- zamknięcie tabeli                                                                                                                                                                                             
     
 </body>
-</html>
+</html>-->
 
 
 Ogólnie zadanie było proste
