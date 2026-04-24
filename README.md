@@ -1,7 +1,7 @@
 # zadanie1 
-`<?php
+```<?php
 
-```$conn = mysqli_connect("localhost","root","","hotel");
+`$conn = mysqli_connect("localhost","root","","hotel");
 
 `?>
 `<style>
