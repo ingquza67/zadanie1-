@@ -1,4 +1,4 @@
-
+# zadanie1 
 `<?php
 
 `$conn = mysqli_connect("localhost","root","","hotel");
