@@ -1,5 +1,5 @@
 # zadanie1 
-``` <?php
+`<?php
 
 `$conn = mysqli_connect("localhost","root","","hotel");
 
