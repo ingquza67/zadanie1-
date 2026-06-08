@@ -3,7 +3,10 @@
 ## Opis projektu
 Ten plik łączy się z bazą danych i wyświetla pokoje hotelowe w tabeli HTML.
 
-Pokazuje tylko pokoje, które mają więcej niż 2 miejsca.
+Pokazuje tylko pokoje, które mają więcej niż 2 miejsca. 
+
+
+Ogólnie zadanie jest proste i nie miałem dużych trudności w pisaniu tego kodu. Jedyne lekkie problemh jakie miałem to w trakice pisania pętli while oraz zrozumieniem mysqli_fetch_assoc lecz dalem sobie z tym rade
 
 ---
 
